@@ -1,0 +1,161 @@
+:root {
+    --color-primary: #dc3545;
+    --color-secondary: #212529;
+    --color-mint: #20c997;
+    --color-bg-light: #f8f9fa;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--color-bg-light);
+    font-family: var(--font-main);
+    color: #212529;
+    margin: 0;
+    padding: 0;
+}
+
+/* ENCABEZADO */
+header h1 {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+
+header p {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+/* NAVEGACIÓN Y MENÚ ENCABEZADO */
+nav.nav-menu {
+    background-color: #212529 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0.4rem 0.8rem !important;
+    border-radius: 6px !important;
+}
+
+nav.nav-menu button.nav-link-btn {
+    color: #ffffff !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    padding: 0.5rem 0.9rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.4rem !important;
+    background: transparent;
+    border: none;
+    border-radius: 4px !important;
+    cursor: pointer;
+}
+
+nav.nav-menu button.nav-link-btn.active {
+    background-color: #dc3545 !important;
+}
+
+/* BOTÓN INICIAR SESIÓN (VERDE MENTA) */
+nav.nav-menu #contenedor-login button {
+    background-color: #20c997 !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.4rem !important;
+    padding: 0.5rem 0.9rem !important;
+    border-radius: 4px !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+/* TARJETAS DE PRODUCTOS EN CUADRÍCULA */
+.card-producto {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-producto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-producto img {
+    height: 130px;
+    width: 100%;
+    object-fit: contain;
+    margin: 0.5rem 0;
+}
+
+.card-producto h5 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #212529;
+    margin-top: 0.5rem;
+}
+
+/* BOTÓN AGREGAR AL CARRITO EN TARJETAS */
+.btn-mint-carrito {
+    background-color: #20c997 !important;
+    color: #ffffff !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    border: none !important;
+    padding: 0.5rem 0.25rem !important;
+    border-radius: 4px !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    cursor: pointer;
+}
+
+.badge-stock-ok {
+    background-color: #198754;
+    color: #ffffff;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+/* BOTONES FILTRAR Y LIMPIAR */
+.btn-enviar {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.btn-limpiar {
+    background-color: #6c757d;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+}
